@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;300;400;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Ubuntu:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.homepage {
+    position: fixed;
+    max-width: auto;
+    background: url('../images/wallpaper.png') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 55rem;
+
+}
+
+.quote {
+    display: inline-block;
+    text-align: center;
+    margin: 10em 0;
+    line-height: 1.7;
+    opacity: 1;
+    color: rgb(3, 140, 3);
+    /* color: rgba(219, 115, 115, 0.754); */
+    box-shadow: 5px 2px 5px 5px #c8c864da;
+    font-style: italic;
+
+    /* background: transparent; */
+
+}
+
+.app-title {
+    position: fixed;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-inline: 3em;
+    margin-left: 70px;
+    font-size: 1.7rem;
+    box-shadow: 2px 5px 2px 5px #c8c864da;
+    min-width: none;
+    background-color: white;
+    /* transform: rotate(-7deg); */
+}
+
+.app-title a {
+    color: green;
+}
+
+.btn a {
+    display: block;
+    padding: 12px 34px;
+    margin: 12px 12px;
+    background: khaki;
+    border-radius: 10px 10px;
+    color: #008000;
+    opacity: 0.7;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn{
+    width: 50%;
+    display: block;
+    margin: auto;
+
+
+}
+.btn:hover {
+    color: green;
+    opacity: 1;
+    padding: 0;
+    
+    transition: ease-in-out 0.5ms;
+}
