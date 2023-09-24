@@ -78,17 +78,11 @@ body {
 }
 
 .btn {
+    position: fixed;
     width: 50%;
     display: block;
-    margin: 0 auto;
-}
-
-.btn:hover {
-    color: green;
-    opacity: 1;
-    padding: 0;
-
-    transition: ease-in-out 0.5ms;
+    left: 30%;
+    top: 80%;
 }
 
 .footer {
@@ -99,16 +93,16 @@ body {
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
 
     body {
         display: block;
-        
+
     }
 
-    .quote{
+    .quote {
         display: flex;
-    } 
+    }
 
     .homepage {
         display: block;
@@ -125,9 +119,17 @@ body {
     .btn {
         position: fixed;
         top: 82%;
-        margin-inline: 5em;
+        /* right: 30%; */
+        /* margin-inline: 5em; */
     }
-    .app-title{
+    .btn:hover {
+        color:wheat;
+        opacity: 0.9;
+        cursor:grabbing;
+        background-color: #008000;
+    }
+
+    .app-title {
         position: fixed;
     }
 
