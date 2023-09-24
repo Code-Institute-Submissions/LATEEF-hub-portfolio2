@@ -37,13 +37,9 @@ body {
     opacity: 1;
     color: rgb(3, 140, 3);
     /* color: rgba(219, 115, 115, 0.754); */
-    box-shadow: 5px 2px 5px 5px rgba(200, 200, 100, 0.853);
+    box-shadow: 5px 2px 5px 5px #c8c864da;
     font-style: italic;
-
     background-color: #ccf0cc4a;
-    /* background-blend-mode:color; */
-
-
 }
 
 .app-title {
@@ -93,10 +89,13 @@ body {
 
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 540px) {
 
     body {
         display: block;
+        /* background-color: #f0e68c; */
+        background-color: #c8c864da;
+        /* box-sizing: border-box; */
 
     }
 
@@ -107,7 +106,7 @@ body {
     .homepage {
         display: block;
         position: absolute;
-        max-width: 350px;
+        max-width: 400px;
         height: 800px;
         top: 50%;
         /* bottom: 10; */
