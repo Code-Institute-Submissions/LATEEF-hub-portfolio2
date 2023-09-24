@@ -125,8 +125,6 @@ body {
     .btn:hover {
         color:wheat;
         opacity: 0.9;
-        cursor:grabbing;
-        background-color: #008000;
     }
 
     .app-title {
