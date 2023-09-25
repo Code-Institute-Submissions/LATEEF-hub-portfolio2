@@ -9,6 +9,9 @@
     <meta name="author" content="Quduis Lateef">
     <meta name="description" content="app">
     <title>spend&Track</title>
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -19,9 +22,25 @@
 
 <body>
     <div class="budget-container">
-        <div class="app-title">
-            <a href="index.html" class="logo">spend<strong>&Track</strong></a>
-        </div>
+        <header>
+            <div>
+                <a href="index.html"><small>spend<strong>&Track</strong></small>
+                </a>
+            </div>
+
+            <input type="checkbox" id="nav-toggle" name="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+            <nav>
+                <ul class="menu-link">
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Dashboard</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+
         <div class="budget-header">
             <div class="budget"></div>
         </div>
