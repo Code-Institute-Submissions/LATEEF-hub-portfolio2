@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;300;400;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Ubuntu:wght@300;400;700&display=swap');
 
+:root{
+    --DS-flex: flex;
+    --DS-block: block;
+    --JC-center: center;
+    --Box-shadowQuote: 5px 2px 5px 5px #c8c864da;
+    --Box-shadowTitle: 2px 5px 2px 5px #c8c864da;
+    --Primary-Color: #c8c864da;
+}
 
 * {
     margin: 0;
@@ -20,7 +28,7 @@ body {
 }
 
 header {
-    background-color: white;
+    background-color: var(--Primary-Color);
     position: fixed;
     width: 100%;
     z-index: 99;
@@ -70,7 +78,7 @@ nav {
 }
 
 .nav-toggle-label {
-    display: block;
+    display: var(--DS-block);
     font-size: 2rem;
     font-weight: 100;
     color: #c8c864da;
@@ -86,7 +94,7 @@ nav {
     opacity: 1;
     color: rgb(3, 140, 3);
     /* color: rgba(219, 115, 115, 0.754); */
-    box-shadow: 5px 2px 5px 5px #c8c864da;
+    box-shadow: var(--Box-shadowQuote);
     font-style: italic;
     background-color: #ccf0cc4a;
 }
@@ -98,7 +106,7 @@ nav {
     margin-inline: 3em;
     margin-left: 50px;
     font-size: 1.7rem;
-    box-shadow: 2px 5px 2px 5px #c8c864da;
+    box-shadow: var(--Box-shadowTitle);
     /* background-color: white; */
     /* transform: rotate(-7deg); */
 }
@@ -141,14 +149,22 @@ nav {
 @media screen and (min-width: 540px) {
     body {
         display: block;
-        /* background-color: #f0e68c; */
-        /* background-color: #c8c864da; */
-        /* box-sizing: border-box; */
+        background-color: #c8c864da;
+        box-sizing: border-box;
     }
 
     .budget-container {
-        height: auto !important;
-        width: auto;
+        display: block;
+        position: absolute;
+        width: 65%;
+        margin-inline: 1em;
+        margin-block: 3em;
+        height: 700px;
+        top: 40%;
+        /* bottom: 10; */
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
     }
 
     nav {
@@ -156,7 +172,6 @@ nav {
         box-shadow: inherit;
         width: fit-content;
         position: relative;
-        padding-right: 1em;
     }
 
     .nav-toggle-label {
@@ -164,9 +179,11 @@ nav {
     }
 
 
-    */ .menu-link {
-        display: flex;
+    .menu-link {
+        display: block;
         justify-content: space-around;
+        margin: 30px 10px auto;
+        margin-left: auto;
 
     }
 
