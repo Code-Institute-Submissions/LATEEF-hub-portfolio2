@@ -28,8 +28,8 @@ body {
 }
 
 header {
-    background-color: var(--Primary-Color);
-    position: fixed;
+    /* background-color: var(--Primary-Color); */
+    position: relative;
     width: 100%;
     z-index: 99;
     padding-inline: 0.5em;
@@ -136,6 +136,14 @@ nav {
     top: 80%;
 }
 
+/* BUDGET HEADER */
+.budget-header .balance{
+    margin-top: 40px;
+}
+
+
+
+
 .footer {
     /* display: inline-block; */
     position: fixed;
@@ -156,7 +164,7 @@ nav {
     .budget-container {
         display: block;
         position: absolute;
-        width: 65%;
+        width: 80%;
         margin-inline: 1em;
         margin-block: 3em;
         height: 700px;
