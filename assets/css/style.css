@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;300;400;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Ubuntu:wght@300;400;700&display=swap');
 
-:root{
+:root {
     --DS-flex: flex;
     --DS-block: block;
     --JC-center: center;
+    --JC-spaceBtw: space-between;
     --Box-shadowQuote: 5px 2px 5px 5px #c8c864da;
     --Box-shadowTitle: 2px 5px 2px 5px #c8c864da;
     --Primary-Color: #c8c864da;
@@ -27,18 +28,6 @@ body {
     height: 100%; */
 }
 
-header {
-    /* background-color: var(--Primary-Color); */
-    position: relative;
-    width: 100%;
-    z-index: 99;
-    padding-inline: 0.5em;
-    /* box-shadow: 0 2px 2px #c8c864da; */
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
 .homepage {
     position: relative;
     height: 100vh;
@@ -54,19 +43,35 @@ header {
 }
 
 .menu-link>li {
-    margin-bottom: 5em;
-    /* padding-block: 1rem; */
-    display: inline;
+    /* margin-bottom: 5em; */
+    display: inline-block;
+    justify-content: space-evenly;
 
 }
 
-nav {
+/* nav {
     position: absolute;
     width: 100%;
-    left: 120;
+    right: 130;
     box-shadow: 0 2px 2px #c8c864da;
     display: none;
+    top: 60%;
+} */
+
+nav {
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: 10;
+    /* padding-inline: .5rem; */
+    /* margin-top: 1em; */
+    box-shadow: 3px 4px 50px var(--Secondary-CL);
+    display: none;
     top: 100%;
+}
+nav li{
+    display: inline;
+    justify-content: space-evenly;
 }
 
 #nav-toggle:checked~nav {
@@ -80,9 +85,7 @@ nav {
 .nav-toggle-label {
     display: var(--DS-block);
     font-size: 2rem;
-    font-weight: 100;
     color: #c8c864da;
-    margin-left: 10%;
 }
 
 .quote {
@@ -107,10 +110,7 @@ nav {
     margin-left: 50px;
     font-size: 1.7rem;
     box-shadow: var(--Box-shadowTitle);
-    /* background-color: white; */
-    /* transform: rotate(-7deg); */
 }
-
 
 .app-title a {
     color: green;
@@ -136,48 +136,93 @@ nav {
     top: 80%;
 }
 
-/* BUDGET HEADER */
-.budget-header .balance{
-    margin-top: 40px;
-}
-
-
-
-
-.footer {
-    /* display: inline-block; */
+header {
     position: fixed;
-    color: #008000;
-    margin-top: 30em;
+    width: 100%;
+    z-index: 99;
+    /* height: 90px; */
+    padding-inline: 0.5em;
+    /* box-shadow: 0 2px 2px #c8c864da; */
+
+    background-color: var(--Primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    /* padding-inline: 1rem; */
+    /* box-shadow: none; */
+    display: var(--DS-flex);
+    justify-content: var(--JC-spaceBtw);
+    align-items: baseline
 }
+
+
+/* BUDGET HEADER
+
+ .budget-container {
+    display:flex;
+    flex: 1 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    color: indigo;
+    background-color: var(--Primary-Color);
+    min-height: 100vh;
+    width: 100%;
+    margin:  auto;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    top: 20%; 
+} 
+
+.budget-header {
+    min-height: 50vh;
+    max-width: 100%;
+    display: block;
+    position: relative;
+    background-color: var(--Primary-Color);
+    /* background-color: #fff; 
+    margin-top: 1rem; 
+    color: indigo;
+
+
+}
+*/
+/* .budget-dashboard{
+    top: 50%;
+    background-color: gold;
+    height: min-content;
+    max-width: fit-content;
+} */
+
+
 
 
 
 
 @media screen and (min-width: 540px) {
-    body {
+    /* body {
         display: block;
-        background-color: #c8c864da;
-        box-sizing: border-box;
-    }
+    } */
 
     .budget-container {
-        display: block;
+        display: inline;
         position: absolute;
         width: 80%;
-        margin-inline: 1em;
-        margin-block: 3em;
-        height: 700px;
-        top: 40%;
-        /* bottom: 10; */
+        height: 100%;
+        margin-block: 1em;
+        top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
+    }
 
+    header {
+        /* display: flex; */
+        position: fixed;
+        margin-bottom: 3rem;
+        z-index: 99;
     }
 
     nav {
         display: inline-block;
-        box-shadow: inherit;
+        box-shadow: none;
         width: fit-content;
         position: relative;
     }
@@ -210,7 +255,6 @@ nav {
         /* bottom: 10; */
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
-
     }
 
     .btn {
@@ -227,6 +271,15 @@ nav {
 
     .app-title {
         position: fixed;
+        display: flex;
+        justify-self: center;
+    }
+
+    .budget-header {
+        margin: 50px;
+        border-radius: 10px;
+        margin-top: 4em;
+        /* z-index: -99; */
     }
 
 
