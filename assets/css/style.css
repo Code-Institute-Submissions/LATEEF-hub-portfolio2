@@ -8,6 +8,7 @@
     --Box-shadowQuote: 5px 2px 5px 5px #c8c864da;
     --Box-shadowTitle: 2px 5px 2px 5px #c8c864da;
     --Primary-Color: #c8c864da;
+    --Secondary-Color: #00824e;
 }
 
 * {
@@ -43,7 +44,7 @@ body {
 }
 
 .menu-link>li {
-    /* margin-bottom: 5em; */
+    margin-bottom: 5em;
     display: inline-block;
     justify-content: space-evenly;
 
@@ -65,17 +66,16 @@ nav {
     left: 10;
     /* padding-inline: .5rem; */
     /* margin-top: 1em; */
-    box-shadow: 3px 4px 50px var(--Secondary-CL);
+    box-shadow: 0 5px 5px var(--Secondary-Color);
     display: none;
     top: 100%;
 }
-nav li{
-    display: inline;
-    justify-content: space-evenly;
+li{
+    display: block;
 }
 
 #nav-toggle:checked~nav {
-    display: block;
+    display: flex;
 }
 
 #nav-toggle {
