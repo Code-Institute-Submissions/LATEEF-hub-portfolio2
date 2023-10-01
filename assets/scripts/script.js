@@ -9,8 +9,6 @@ const incomeList = document.querySelector("#income .list");
 const expenseList = document.querySelector("#expense .list");
 const allList = document.querySelector("#all .list");
 
-//Select BTNS
-
 // SELECT BTNS
 const expenseBtn = document.querySelector(".tab1");
 const incomeBtn = document.querySelector(".tab2");
@@ -24,6 +22,15 @@ const expenseAmount = document.getElementById("expense-amount-input");
 const addIncome = document.querySelector(".add-income");
 const incomeTitle = document.getElementById("income-title-input");
 const incomeAmount = document.getElementById("income-amount-input");
+
+// VARIABLES
+let ENTRY_LIST;
+let balance = 0, income = 0, outcome = 0;
+const DELETE = "delete", EDIT = "edit";
+
+// LOOK IF THERE IS SAVED DATA IN LOCALSTORAGE
+ENTRY_LIST = JSON.parse(localStorage.getItem("entry_list")) || [];
+updateUI();
 
 // EVENT LISTENERS
 expenseBtn.addEventListener("click", function(){
@@ -45,6 +52,48 @@ allBtn.addEventListener("click", function(){
    inactive( [incomeBtn, expenseBtn] );
 })
 
+// addExpense.addEventListener("click", function(){
+//    // IF ONE OF THE INPUTS IS EMPTY => EXIT
+//    if(!expenseTitle.value || !expenseAmount.value ) return;
+
+//    // SAVE THE ENTRY TO ENTRY_LIST
+//    let expense = {
+//        type : "expense",
+//        title : expenseTitle.value,
+//        amount : parseInt(expenseAmount.value)
+//    }
+//    ENTRY_LIST.push(expense);
+
+//    updateUI();
+//    clearInput( [expenseTitle, expenseAmount] )
+// })
+
+// addIncome.addEventListener("click", function(){
+//    // IF ONE OF THE INPUTS IS EMPTY => EXIT
+//    if(!incomeTitle.value || !incomeAmount.value ) return;
+
+//    // SAVE THE ENTRY TO ENTRY_LIST
+//    let income = {
+//        type : "income",
+//        title : incomeTitle.value,
+//        amount : parseInt(incomeAmount.value)
+//    }
+//    ENTRY_LIST.push(income);
+
+//    updateUI();
+//    clearInput( [incomeTitle, incomeAmount] )
+// })
+
+// incomeList.addEventListener("click", deleteOrEdit);
+// expenseList.addEventListener("click", deleteOrEdit);
+// allList.addEventListener("click", deleteOrEdit);
+
+
+
+
+function calculateBalance(income, outcome){
+   return income - outcome;
+}
 
 
 function show(element){
