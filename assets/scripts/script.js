@@ -95,6 +95,12 @@ function calculateBalance(income, expense){
    return income - expense;
 }
 
+function clearInput(inputs){
+   inputs.forEach( input => {
+       input.value = "";
+   })
+}
+
 
 function show(element){
    element.classList.remove("hide");
