@@ -22,19 +22,42 @@
 
 <body>
     <header>
-        <a href="index.html"><small>spend<strong>&Track</strong></small>
+        <a href="index.html" class="logo"><small>spend<strong>&Track</strong></small>
         </a>
 
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
         <nav>
             <ul class="menu-link">
-                <li><a href="#budget-header">Analytics</a></li>
-                <li><a href="#budget-dashboard">Dashboard</a></li>
+                <li><a href="#analytics">Analytics</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
             </ul>
         </nav>
 
     </header>
+    <main class="main">
+        <div class="budget-container">
+            <div class="budget-header" id="analytics">
+                <div class="balance">
+                    <div class="title">
+                        Balance
+                    </div>
+                    <div class="value">
+                        <small>€</small>0
+                    </div>
+                </div>
+            </div>
+            <div class="budget-dashboard" id="dashboard">
+                <div>
+                    Dashboard
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
 
 
 </body>
