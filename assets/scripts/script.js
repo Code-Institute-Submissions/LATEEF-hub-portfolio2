@@ -88,6 +88,22 @@ allBtn.addEventListener("click", function(){
 // expenseList.addEventListener("click", deleteOrEdit);
 // allList.addEventListener("click", deleteOrEdit);
 
+
+//Function to show Entry
+
+function showEntry(list, type, title, amount, id){
+
+   const entry = ` <li id = "${id}" class="${type}">
+                       <div class="entry">${title}: $${amount}</div>
+                       <div id="edit"></div>
+                       <div id="delete"></div>
+                   </li>`;
+
+   const position = "afterbegin";
+
+   list.insertAdjacentHTML(position, entry);
+}
+
 function clearElement(elements){
    elements.forEach( element => {
        element.innerHTML = "";
