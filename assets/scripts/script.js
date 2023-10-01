@@ -88,8 +88,23 @@ allBtn.addEventListener("click", function(){
 // expenseList.addEventListener("click", deleteOrEdit);
 // allList.addEventListener("click", deleteOrEdit);
 
+function clearElement(elements){
+   elements.forEach( element => {
+       element.innerHTML = "";
+   })
+}
 
+function calculateTotal(type, list){
+   let sum = 0;
 
+   list.forEach( entry => {
+       if( entry.type == type ){
+           sum += entry.amount;
+       }
+   })
+
+   return sum;
+}
 
 function calculateBalance(income, expense){
    return income - expense;
