@@ -47,22 +47,22 @@ allBtn.addEventListener("click", function(){
 
 
 
-// function show(element){
-//    element.classList.remove("hide");
-// }
+function show(element){
+   element.classList.remove("hide");
+}
 
-// function hide( elements ){
-//    elements.forEach( element => {
-//        element.classList.add("hide");
-//    })
-// }
+function hide( elements ){
+   elements.forEach( element => {
+       element.classList.add("hide");
+   })
+}
 
-// function active(element){
-//    element.classList.add("active");
-// }
+function active(element){
+   element.classList.add("active");
+}
 
-// function inactive( elements ){
-//    elements.forEach( element => {
-//        element.classList.remove("active");
-//    })
-// }
+function inactive( elements ){
+   elements.forEach( element => {
+       element.classList.remove("active");
+   })
+}
