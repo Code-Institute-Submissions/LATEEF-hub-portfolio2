@@ -20,3 +20,51 @@ const allBtn = document.querySelector(".tab3");
 const addExpense = document.querySelector(".add-expense");
 const expenseTitle = document.getElementById("expense-title-input");
 const expenseAmount = document.getElementById("expense-amount-input");
+
+const addIncome = document.querySelector(".add-income");
+const incomeTitle = document.getElementById("income-title-input");
+const incomeAmount = document.getElementById("income-amount-input");
+
+//E Listener
+
+// // EVENT LISTENERS
+// expenseBtn.addEventListener("click", function(){
+//    show(expenseEl);
+//    hide( [incomeEl, allEl] );
+//    active( expenseBtn );
+//    inactive( [incomeBtn, allBtn] );
+// })
+// incomeBtn.addEventListener("click", function(){
+//    show(incomeEl);
+//    hide( [expenseEl, allEl] );
+//    active( incomeBtn );
+//    inactive( [expenseBtn, allBtn] );
+// })
+// allBtn.addEventListener("click", function(){
+//    show(allEl);
+//    hide( [incomeEl, expenseEl] );
+//    active( allBtn );
+//    inactive( [incomeBtn, expenseBtn] );
+// })
+
+
+
+// function show(element){
+//    element.classList.remove("hide");
+// }
+
+// function hide( elements ){
+//    elements.forEach( element => {
+//        element.classList.add("hide");
+//    })
+// }
+
+// function active(element){
+//    element.classList.add("active");
+// }
+
+// function inactive( elements ){
+//    elements.forEach( element => {
+//        element.classList.remove("active");
+//    })
+// }
