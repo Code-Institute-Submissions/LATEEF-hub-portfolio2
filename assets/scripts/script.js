@@ -91,8 +91,8 @@ allBtn.addEventListener("click", function(){
 
 
 
-function calculateBalance(income, outcome){
-   return income - outcome;
+function calculateBalance(income, expense){
+   return income - expense;
 }
 
 
