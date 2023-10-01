@@ -56,13 +56,11 @@
                         </div>
                     </div>
                     <div class="chart"></div>
-                    <!-- <canvas id="myChart" style="width:100%;max-width:700px"></canvas> -->
-
-                    <div class="expense">
+                    <div class="outcome">
                         <div class="title">
-                            Expenses
+                            Outcome
                         </div>
-                        <div class="expense-total">
+                        <div class="outcome-total">
                             <small>€</small>0
                         </div>
                     </div>
@@ -79,16 +77,16 @@
                     <ul class="list"></ul>
                     <div class="input">
                         <input type="text" id="income-title-input" name="title" placeholder="Title">
-                        <input type="number" id="income-amount-input" name="amount" placeholder="$0">
-                        <div class="add-income"><img src="./assets/icon/plus.png" alt=""></div>
+                        <input type="number" id="income-amount-input" name="amount" placeholder="€ 0">
+                        <div class="add-income"><img src="./assets/icon/plus.png" alt="add button"></div>
                     </div>
                 </div>
                 <div class="hide" id="expense">
                     <ul class="list"></ul>
                     <div class="input">
                         <input type="text" id="expense-title-input" name="title" placeholder="Title">
-                        <input type="number" id="expense-amount-input" name="amount" placeholder="$0">
-                        <div class="add-expense"><img src="./assets/icon/plus.png" alt=""></div>
+                        <input type="number" id="expense-amount-input" name="amount" placeholder="€ 0">
+                        <div class="add-expense"><img src="./assets/icon/plus.png" alt="add button"></div>
                     </div>
                 </div>
                 <div id="all">
@@ -101,8 +99,10 @@
 
     </main>
 
-    <script src="./assets/scripts/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    <script src="assets/scripts/script.js"></script>
+    <script src="assets/scripts/chart.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"> -->
     </script>
 </body>
 

@@ -27,17 +27,18 @@ html {
 
 body {
     min-height: 100vh;
+    max-width: 100%;
     color: var(--Secondary-Color);
     display: flex;
     background-color: var(--Secondary-Color);
     font-family: 'Montserrat', sans-serif;
-    /* font-weight: 600; */
+    font-weight: 400;
 }
 
 
 .homepage {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     background: url('../images/wallpaper.png') no-repeat center center fixed;
     background-size: cover;
     width: 100%;
@@ -167,6 +168,12 @@ nav {
     margin-top: 60px;
     flex: 1 0 auto;
 }
+/* .budget-container{
+    position: relative;
+    
+
+} */
+
 
 
 .budget-header{
@@ -174,33 +181,35 @@ nav {
 }
 
 .budget-header .balance{
-    margin-top: 45px;
+    margin-top: 4px;
     margin-left: 20px;
 }
 
-.budget-header .balance .title{
+.budget-header .balance, .title{
     color: #FFF;
     font-size: 1em;
-    font-family: 'Gilroy Bold';
+    font-family: inherit;
 }
 
 .budget-header .balance .value{
     color: #FFF;
-    font-size: 2em;
-    margin-top: 10px;
-    font-family: 'Gilroy Bold';
+    font-size: max(16px, 2rem);
+    margin-top: 12px;
+    font-family: inherit;
+    font-weight: lighter;
+
 }
 
 .budget-header .account{
     display: block;
     width: 310px;
     margin: 35px auto 0;
-    line-height: 1.7em;
+    line-height: 2em;
     text-align: center;
     
 }
 
-.budget-header .account .income, .chart, .expense{
+.budget-header .account .income, .chart, .outcome{
     height: 50px;
     display: inline-block;
     width: 100px;
@@ -209,27 +218,27 @@ nav {
 
 .budget-header .account .income .title{
     color: #FFF;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .budget-header .account .income .income-total{
     color: #FFF;
-    font-family: 'Gilroy Bold';
+    font-family: 'inherit';
 }
 
-.budget-header .account .expense .title{
+.budget-header .account .outcome .title{
     color: #FFF;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 
-.budget-header .account .expense .expense-total{
+.budget-header .account .outcome .outcome-total{
     color: #f0624d;
-    font-family: 'Gilroy Bold';
+    font-family: 'inherit';
 }
 
 
 .budget-header {
-    min-height: 60vh;
+    min-height: 50vh;
     width: 100%;
     display: var(--DS-block);
     position: relative;
@@ -244,7 +253,7 @@ nav {
 .budget-dashboard {
     display: block;
     width: 100%;
-    min-height: 60vh;
+    min-height: 50vh;
     background-color: #FFF;
     /* margin-top: 35px; */
     border-radius: 20px 20px 0 0;
@@ -283,7 +292,7 @@ nav {
 }
 
 .active {
-    opacity: 1;
+    opacity: 1 !important;
 }
 
 .hide {
@@ -428,7 +437,7 @@ nav {
     width : 150px;
     padding-left: 10px;
     font-size: 1.2em;
-    font-family: 'Gilroy';
+    font-family: inherit;
     margin: 5px;
     margin-left: 10px;
     border-radius: 10px 0 0 10px;
