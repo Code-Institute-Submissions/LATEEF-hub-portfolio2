@@ -25,27 +25,25 @@ const addIncome = document.querySelector(".add-income");
 const incomeTitle = document.getElementById("income-title-input");
 const incomeAmount = document.getElementById("income-amount-input");
 
-//E Listener
-
-// // EVENT LISTENERS
-// expenseBtn.addEventListener("click", function(){
-//    show(expenseEl);
-//    hide( [incomeEl, allEl] );
-//    active( expenseBtn );
-//    inactive( [incomeBtn, allBtn] );
-// })
-// incomeBtn.addEventListener("click", function(){
-//    show(incomeEl);
-//    hide( [expenseEl, allEl] );
-//    active( incomeBtn );
-//    inactive( [expenseBtn, allBtn] );
-// })
-// allBtn.addEventListener("click", function(){
-//    show(allEl);
-//    hide( [incomeEl, expenseEl] );
-//    active( allBtn );
-//    inactive( [incomeBtn, expenseBtn] );
-// })
+// EVENT LISTENERS
+expenseBtn.addEventListener("click", function(){
+   show(expenseEl);
+   hide( [incomeEl, allEl] );
+   active( expenseBtn );
+   inactive( [incomeBtn, allBtn] );
+})
+incomeBtn.addEventListener("click", function(){
+   show(incomeEl);
+   hide( [expenseEl, allEl] );
+   active( incomeBtn );
+   inactive( [expenseBtn, allBtn] );
+})
+allBtn.addEventListener("click", function(){
+   show(allEl);
+   hide( [incomeEl, expenseEl] );
+   active( allBtn );
+   inactive( [incomeBtn, expenseBtn] );
+})
 
 
 
