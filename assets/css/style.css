@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     color: var(--Secondary-Color);
     display: flex;
@@ -170,13 +170,12 @@ nav {
 }
 .budget-container{
     position: relative;
-    
-
 }
 
 
 
 .budget-header{
+
 
 }
 
@@ -203,10 +202,9 @@ nav {
 .budget-header .account{
     display: block;
     width: 310px;
-    margin: 35px auto 0;
+    margin: 100px auto 0;
     line-height: 2em;
     text-align: center;
-    
 }
 
 .budget-header .account .income, .chart, .outcome{
@@ -238,7 +236,7 @@ nav {
 
 
 .budget-header {
-    min-height: 50vh;
+    min-height: 60vh;
     width: 100%;
     display: var(--DS-block);
     position: relative;
@@ -299,13 +297,13 @@ nav {
     display: none;
 }
 
-/* .budget-dashboard input{
-    /* MAKE INPUT SELECTABLE 
+.budget-dashboard input{
+     /* MAKE INPUT SELECTABLE  */
     -webkit-user-select: auto;      
     -moz-user-select: auto;
     -ms-user-select: auto;
     user-select: auto;
-} */
+}
 
 
 
@@ -322,6 +320,7 @@ nav {
     width: 360px;
     bottom: 0;
     border-top: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
 }
 
 .budget-dashboard #expense .input *{
@@ -357,6 +356,8 @@ nav {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    margin-left: 20px;
+    background-color:none; 
 }
 
 .budget-dashboard #expense ul{
@@ -425,6 +426,7 @@ nav {
     width: 360px;
     bottom: 0;
     border-top: 1px solid #ccc;
+    border-radius: 10px 10px 0 0;
 }
 
 .budget-dashboard #income .input *{
@@ -437,7 +439,7 @@ nav {
     width : 150px;
     padding-left: 10px;
     font-size: 1.2em;
-    font-family: inherit;
+    font-family: 'Gilroy';
     margin: 5px;
     margin-left: 10px;
     border-radius: 10px 0 0 10px;
@@ -460,6 +462,7 @@ nav {
     width: 40px;
     height: 40px;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .budget-dashboard #income ul{
@@ -475,12 +478,14 @@ nav {
 .budget-dashboard #income ul.list li{
     position: relative;
     font-size: 1em;
+   
 }
 
 .budget-dashboard #income ul.list li *{
     display: inline-block;
     height: 30px;
     vertical-align: middle;
+   
 }
 
 .budget-dashboard #income ul.list li .entry{
@@ -489,8 +494,19 @@ nav {
     padding-left: 20px;
     margin-bottom: 10px;;
     word-wrap: break-word;
-    font-family: 'Gilroy Bold';
+    /* font-family: 'Gilroy Bold'; */
+    font-family: inherit;
     color: green;
+    
+    /* border-radius: 10px 10px 0 0; */
+}
+.entry::after{
+    content: '';
+    display: block;
+    /* border-bottom: 1px solid var(--Primary-Color); */
+    border-bottom: 1px dotted var(--Primary-Color);
+    padding-top: 0.3rem;
+
 }
 
 .budget-dashboard #income ul.list li #edit{
@@ -586,7 +602,7 @@ nav {
 
 
 
-@media screen and (min-width: 540px) {
+@media screen and (min-width: px) {
     /* body {
         display: block;
     } */

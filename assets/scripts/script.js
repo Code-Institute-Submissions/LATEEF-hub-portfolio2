@@ -104,9 +104,18 @@ function deleteOrEdit(event) {
 
 function deleteEntry(entry) {
    ENTRY_LIST.splice(entry.id, 1);
-
    updateUI();
 }
+
+// function confirmDelete(entry) {
+//    let txt;
+//    if (confirm("Do you want to delete?")) {
+//       txt = "Transaction deleted!";
+//    } else {
+//       txt = "Cancelled";
+//    }
+//    document.getElementById("demo").innerHTML = txt;
+// }
 
 function editEntry(entry) {
    console.log(entry)
@@ -121,6 +130,7 @@ function editEntry(entry) {
    }
 
    deleteEntry(entry);
+   updateUI();
 }
 
 
@@ -189,6 +199,7 @@ function calculateTotal(type, list) {
 function calculateBalance(income, expense) {
    return income - outcome;
 }
+
 
 function clearInput(inputs) {
    inputs.forEach(input => {
