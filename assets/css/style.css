@@ -27,12 +27,12 @@ html {
 
 body {
     min-height: 100vh;
-    max-width: 100%;
+    width: 100%;
     color: var(--Secondary-Color);
     display: flex;
     background-color: var(--Secondary-Color);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 
@@ -168,11 +168,11 @@ nav {
     margin-top: 60px;
     flex: 1 0 auto;
 }
-/* .budget-container{
+.budget-container{
     position: relative;
     
 
-} */
+}
 
 
 
