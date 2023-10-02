@@ -25,119 +25,119 @@ const incomeAmount = document.getElementById("income-amount-input");
 
 // VARIABLES
 let ENTRY_LIST;
-let balance = 0, income = 0, expense = 0;
+let balance = 0, income = 0, outcome = 0;
 const DELETE = "delete", EDIT = "edit";
 
 // // LOOK IF THERE IS SAVED DATA IN LOCALSTORAGE
-// ENTRY_LIST = JSON.parse(localStorage.getItem("entry_list")) || [];
+ENTRY_LIST = JSON.parse(localStorage.getItem("entry_list")) || [];
 // updateUI();
 
 // EVENT LISTENERS
-expenseBtn.addEventListener("click", function(){
+expenseBtn.addEventListener("click", function () {
    show(expenseEl);
-   hide( [incomeEl, allEl] );
-   active( expenseBtn );
-   inactive( [incomeBtn, allBtn] );
+   hide([incomeEl, allEl]);
+   active(expenseBtn);
+   inactive([incomeBtn, allBtn]);
 })
-incomeBtn.addEventListener("click", function(){
+incomeBtn.addEventListener("click", function () {
    show(incomeEl);
-   hide( [expenseEl, allEl] );
-   active( incomeBtn );
-   inactive( [expenseBtn, allBtn] );
+   hide([expenseEl, allEl]);
+   active(incomeBtn);
+   inactive([expenseBtn, allBtn]);
 })
-allBtn.addEventListener("click", function(){
+allBtn.addEventListener("click", function () {
    show(allEl);
-   hide( [incomeEl, expenseEl] );
-   active( allBtn );
-   inactive( [incomeBtn, expenseBtn] );
+   hide([incomeEl, expenseEl]);
+   active(allBtn);
+   inactive([incomeBtn, expenseBtn]);
 })
 
-// addExpense.addEventListener("click", function(){
-//    // IF ONE OF THE INPUTS IS EMPTY => EXIT
-//    if(!expenseTitle.value || !expenseAmount.value ) return;
+addExpense.addEventListener("click", function(){
+   // IF ONE OF THE INPUTS IS EMPTY => EXIT
+   if(!expenseTitle.value || !expenseAmount.value ) return;
 
-//    // SAVE THE ENTRY TO ENTRY_LIST
-//    let expense = {
-//        type : "expense",
-//        title : expenseTitle.value,
-//        amount : parseInt(expenseAmount.value)
-//    }
-//    ENTRY_LIST.push(expense);
+   // SAVE THE ENTRY TO ENTRY_LIST
+   let expense = {
+       type : "expense",
+       title : expenseTitle.value,
+       amount : parseInt(expenseAmount.value)
+   }
+   ENTRY_LIST.push(expense);
 
-//    updateUI();
-//    clearInput( [expenseTitle, expenseAmount] )
-// })
+   updateUI();
+   clearInput( [expenseTitle, expenseAmount] )
+})
 
-// addIncome.addEventListener("click", function(){
-//    // IF ONE OF THE INPUTS IS EMPTY => EXIT
-//    if(!incomeTitle.value || !incomeAmount.value ) return;
+addIncome.addEventListener("click", function(){
+   // IF ONE OF THE INPUTS IS EMPTY => EXIT
+   if(!incomeTitle.value || !incomeAmount.value ) return;
 
-//    // SAVE THE ENTRY TO ENTRY_LIST
-//    let income = {
-//        type : "income",
-//        title : incomeTitle.value,
-//        amount : parseInt(incomeAmount.value)
-//    }
-//    ENTRY_LIST.push(income);
+   // SAVE THE ENTRY TO ENTRY_LIST
+   let income = {
+       type : "income",
+       title : incomeTitle.value,
+       amount : parseInt(incomeAmount.value)
+   }
+   ENTRY_LIST.push(income);
 
-//    updateUI();
-//    clearInput( [incomeTitle, incomeAmount] )
-// })
+   updateUI();
+   clearInput( [incomeTitle, incomeAmount] )
+})
 
 // incomeList.addEventListener("click", deleteOrEdit);
 // expenseList.addEventListener("click", deleteOrEdit);
 // allList.addEventListener("click", deleteOrEdit);
 
 
-// function updateUI(){
-//    income = calculateTotal("income", ENTRY_LIST);
-//    expense = calculateTotal("expense", ENTRY_LIST);
-//    balance = Math.abs(calculateBalance(income, expense));
+function updateUI(){
+   income = calculateTotal("income", ENTRY_LIST);
+   expense = calculateTotal("expense", ENTRY_LIST);
+   balance = Math.abs(calculateBalance(income, expense));
 
-//    // DETERMINE SIGN OF BALANCE
-//    let sign = (income >= expense) ? "€" : "-€";
+   // DETERMINE SIGN OF BALANCE
+   let sign = (income >= expense) ? "€" : "-€";
 
-//    // UPDATE UI
-//    balanceEl.innerHTML = `<small>${sign}</small>${balance}`;
-//    expenseTotalEl.innerHTML = `<small>$</small>${expense}`;
-//    incomeTotalEl.innerHTML = `<small>$</small>${income}`;
+   // UPDATE UI
+   balanceEl.innerHTML = `<small>${sign}</small>${balance}`;
+   expenseTotalEl.innerHTML = `<small>$</small>${expense}`;
+   incomeTotalEl.innerHTML = `<small>$</small>${income}`;
 
-//    clearElement( [expenseList, incomeList, allList] );
+   clearElement( [expenseList, incomeList, allList] );
 
-//    ENTRY_LIST.forEach( (entry, index) => {
-//        if( entry.type == "expense" ){
-//            showEntry(expenseList, entry.type, entry.title, entry.amount, index)
-//        }else if( entry.type == "income" ){
-//            showEntry(incomeList, entry.type, entry.title, entry.amount, index)
-//        }
-//        showEntry(allList, entry.type, entry.title, entry.amount, index)
-//    });
+   ENTRY_LIST.forEach( (entry, index) => {
+       if( entry.type == "expense" ){
+           showEntry(expenseList, entry.type, entry.title, entry.amount, index)
+       }else if( entry.type == "income" ){
+           showEntry(incomeList, entry.type, entry.title, entry.amount, index)
+       }
+       showEntry(allList, entry.type, entry.title, entry.amount, index)
+   });
 
-//    updateChart(income, expense);
+   updateChart(income, expense);
 
-//    localStorage.setItem("entry_list", JSON.stringify(ENTRY_LIST));
-// }
+   localStorage.setItem("entry_list", JSON.stringify(ENTRY_LIST));
+}
 
 
-// //Function to show Entry
-// function showEntry(list, type, title, amount, id){
+//Function to show Entry
+function showEntry(list, type, title, amount, id){
 
-//    const entry = ` <li id = "${id}" class="${type}">
-//                        <div class="entry">${title}: $${amount}</div>
-//                        <div id="edit"></div>
-//                        <div id="delete"></div>
-//                    </li>`;
+   const entry = ` <li id = "${id}" class="${type}">
+                       <div class="entry">${title}: $${amount}</div>
+                       <div id="edit"></div>
+                       <div id="delete"></div>
+                   </li>`;
 
-//    const position = "afterbegin";
+   const position = "afterbegin";
 
-//    list.insertAdjacentHTML(position, entry);
-// }
+   list.insertAdjacentHTML(position, entry);
+}
 
-// function clearElement(elements){
-//    elements.forEach( element => {
-//        element.innerHTML = "";
-//    })
-// }
+function clearElement(elements){
+   elements.forEach( element => {
+       element.innerHTML = "";
+   })
+}
 
 // function calculateTotal(type, list){
 //    let sum = 0;
@@ -162,22 +162,22 @@ allBtn.addEventListener("click", function(){
 // }
 
 
-function show(element){
+function show(element) {
    element.classList.remove("hide");
 }
 
-function hide( elements ){
-   elements.forEach( element => {
-       element.classList.add("hide");
+function hide(elements) {
+   elements.forEach(element => {
+      element.classList.add("hide");
    })
 }
 
-function active(element){
+function active(element) {
    element.classList.add("active");
 }
 
-function inactive( elements ){
-   elements.forEach( element => {
-       element.classList.remove("active");
+function inactive(elements) {
+   elements.forEach(element => {
+      element.classList.remove("active");
    })
 }
