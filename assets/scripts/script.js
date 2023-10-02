@@ -30,7 +30,7 @@ const DELETE = "delete", EDIT = "edit";
 
 // // LOOK IF THERE IS SAVED DATA IN LOCALSTORAGE
 ENTRY_LIST = JSON.parse(localStorage.getItem("entry_list")) || [];
-// updateUI();
+updateUI();
 
 // EVENT LISTENERS
 expenseBtn.addEventListener("click", function () {
