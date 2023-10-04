@@ -1,6 +1,6 @@
  <h1 align="center">Spend&Track</h1>
 
-[View the live project here.](https://lateef-hub.github.io/Portfolio1/)
+[View the live project here.](https://lateef-hub.github.io/Portfolio2/)
 
 <P>Spend&Track is an expense tracker web application that allows users to track thier expense and also keep track of balance. It can be use by different user of different age. It's simple and straight forward. 
 
