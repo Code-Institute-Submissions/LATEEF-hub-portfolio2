@@ -104,36 +104,22 @@
 
     1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the application.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable homepage call to action button to direct budget page to go to the page of their application. Underneath there is a Hero Image with Text that states the mission goal of the app     .
-        2. The main points are made immediately with the hero image that this is a an expenditure and expense tracker application website.
-        3. The user has one options on arrival, click the call to action button in the bottom, then on the secone page, the use will be able to navigate to the homepage and back.
-        4. User can click on the nav bar to see a menu of Analytics and Dashboard
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable homepage call to action button to direct user to budget page of the application. Underneath there is a Hero Image with Text that indicate the mission goal and use of the app.    .
+        2. The main points are made immediately with the hero image that this is an expenditure and expense tracker application website.
+        3. The user has one options on arrival, click the call to action button in the bottom, then on the secone page, the user will be able to navigate to the homepage and back.
+        4. User can click on the nav bar to see a menu of Analytics and Dashboard from the budget page.
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
         1. The site has been designed to be fluid and never to entrap the user. At the bottom of the first page there is a call to action button, to take the user to the main page where they start budgeting
         2. At the top of the second page there is a navigation bar with two optiond (Analytics and Dashboard) there also the logo to your left it's linked directly to the homepage to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
         - Call to Action first and last page
-        <img src="readme-docs/lastpagecta.png" width="250"> 
-        <img src="readme-docs/firstpagecta.png" width="250">
+         ![First call to Action Button](readme-docs/ctahome.png) 
+         ![Last call to action Logo and Navigation Bar](readme-docs/ctabudget.png)
 
--   #### Returning Visitor Goals
+      
 
-    1. As a Returning Visitor, I want to find the new menu added.
 
-        1. These are clearly shown in the banner message.
-        2. They will be directed to a page with another hero image and call to action.
-
-    2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-
-        1. The navigation bar clearly highlights the "Contact Us" Page.
-        2. Here they can fill out the form on the page or are told that alternatively they can message the organisation on social media.
-        3. The footer contains links to the organisations Facebook, Snapchat and Instagram page.
-        4. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
-        5. The email button is set up to automatically open up your email app and autofill there email address in the "To" section.
-
-    3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
-        1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
         ### Fixed Bugs
 
         - The responsiveness of the page on iPad screen was a little bit bad and needed alignment
@@ -145,7 +131,7 @@
     ### Further Testing
 
    -   The Website was tested on Google Chrome, Internet Explorer, Mozilla Firefox, Microsoft Edge and Safari browsers.
-   -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone xr,   Samsung Tablet, iPhone 12 & iPhoneX.
+   -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone xr,  Samsung Tablet, iPhone 12 & iPhoneX , iPhone 14.
    -   A large amount of testing was done to ensure that all pages were linking correctly.
    -   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
 ## Deployment
@@ -202,7 +188,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
   ### Code
 
--   The full-screen hero image code came from this [Wttw post](https://interactive.wttw.com/playlist/2022/10/13/dozzys-grill)
+-   The full-screen hero image code came from this [Dreamstime](https://www.dreamstime.com/stock-photo-money-growht-soil-tree-concept-business-success-finance-sunshine-nature-image94730830)
 
 ### Content
 
@@ -213,6 +199,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Media
 
 -   All Images were created by the developer.
+-   Hero Image from [Dreamstime]
 
 ### Acknowledgements
 
