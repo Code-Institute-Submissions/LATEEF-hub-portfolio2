@@ -12,27 +12,27 @@
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the restaurant.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find contact and menu.
+        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the application.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find a call to action button and menu.
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to find information about new menu included.
-        2. As a Returning Visitor, I want to find the best way to get in contact with the restaurant with any questions I may have.
+        1. As a Returning Visitor, I want to find information about my previous entries.
+        2. As a Returning Visitor, I want to be able to add more entry
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if my favorite food has been added.
-        2. As a Frequent User, I want to check to see if the restaurant now offers discount.
-        3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or restaurant.
+        1. As a Frequent User, I want to check to see if new features are added.
+        2. As a Frequent User, I want to check to see if the application now offers user account.
+        3. As a Frequent User, I want to be able to add unlimited entries.
 
 -   ### Design
     -   #### Colour Scheme
-        -   The three main colours used are Jaded Ice, black, and white.
+        -   The three main colours used are Green, White, and khaki.
     -   #### Typography
-        -   The Lato font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Lato is an excellent choice for web designers looking for a versatile, modern font with a friendly feel., so it is both attractive and appropriate.
+        -   The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is known for it's high readability, and ease of scaling make Montserrat a suitable typeface for printed material, such as brochures, signage and even books and for our app.
     -   #### Imagery
-        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
-        -   The Menu, Specials and customer image are designed to be precise and reflect the website goals.
+        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a motivation, energetic rewarding.
+        -   The budget board color pallette are specially picked to show the understanding of expense tracking and a feel of hope and goals. 
 
 ## Features
   -   #### Navigation Bar:
@@ -42,53 +42,36 @@
        - Logo that can be use to navigate back to the homepage from anywhere on the site.
        
   -  #### Home Page:
-       #### The home page consists of four sections:
-       - The navigation bar with all link to the other pages on the website and Logo that be use to navigate back to the homepage from anywhere on the site.
-       - The hero image section with a clearly description of the restaurant goals, service and mission.
-       - The Special section where user can find specials dishes of the month.
-       - The call to action section that link to contact page where user can leave a query or place an order.
+       #### The home page consists of a section with there element:
+       - The App title bar which serv link to the other pages on the website and Logo that be use to navigate back to the homepage from anywhere on the site.
+       - The hero image section with full background image, a clear qoute about saving time by making plans, goals,  and mission.
+       - The call to action section that link to budget page which user can use to navigate to launch the app.
 
-  - #### Menu Page:
-      - Menu section contains images of different types of dishes.
-      - It show the price of each dish on the menu
-      - It has simple and little description on each dish and ingredients
-
-  - #### About Us Section:
-      - This section explains who we are as well as how we got started. 
-      - It also explains the service we offer.  
-      - Describes what we do at this restaurant.  
-
-  - #### Contact Us Section:
-     - It has a Map section that show user our location on the map for easy reach.
-     - This section provides contact details where you can reach out with any questions or comments.
-     - It provides form section that can be used to place order or submit query through email addresss.
-
- - #### Footer Section:
-     - It provides links to social media account which allow user to connect with the restaurant outside of the site itself.
-     - It provides links to social media accounts such as Facebook, Instagram, etc., and also gives credit to the original creators of the webpages.
-     - It is available at the bottom of every page on the website.
+  - #### Budget Page:
+      - Budget page consists  of Budget header in which user can see Balance and Income and Outcome.
+      - There's a Chart pie that indicate Income in White and Outcome in Red for user illustration.
+      - Budget Dashboard where the entries are display in categories of three (Expense, Income, All)
+      - It also has an input section where user can add transaction under two of the 3 category.
 
 ### Future Features 
-- User will be able to order multiple item at a time by using the add to cart feature.
+- User will be able to sign up for a user account.
 
 ## Wireframes
 -   Large Screen Wireframe
-        - <img src="readme-docs/wireframes/homepage.png" width="300">
-        - <img src="readme-docs/wireframes/menu-page.png" width="300"> 
-        - <img src="readme-docs/wireframes/contact-page.png" width="300"> 
-        - <img src="readme-docs/wireframes/about-page.png" width="300">
+        - ![Tablet and Large screen](readme-docs/wireframes/New%20Wireframe%202.png)
+        
 
 -   Mobile Screen Wireframe
-        - <img src="readme-docs/wireframes/mobilehomepage.png" width="200">
-        - <img src="readme-docs/wireframes/menu-mobile.png" width="200"> 
-        - <img src="readme-docs/wireframes/contactmobilepage.png" width="200"> 
-        - <img src="readme-docs/wireframes/aboutmobilepage.png" width="200">
+        - ![small screen homepage](readme-docs/wireframes/HomepageM.png)
+        - ![small screen ](readme-docs/wireframes/budgetM.png)
 
 ## Technologies Used
 
 - ### Languages Used
      -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
      -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+     -   [JavaScript ES6](http://es6-features.org/)
+     -    ## Frameworks & Libraries
  
 - ### Frameworks, Libraries & Programs Used
   1. [Google Fonts:](https://fonts.google.com/)
@@ -97,6 +80,9 @@
         - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
   1. [Balsamiq:](https://balsamiq.com/)
         - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+  1. [Canvas:](https://balsamiq.com/)
+        - Canvas was used to create the Chart pie[wireframes](https://github.com/) during the design process.
+      
 
  
 ## Testing
@@ -105,37 +91,31 @@
     The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
      - [W3C HTML Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - ![H](readme-docs/validator.png)
      - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - ![](readme-docs/validator.png)
+     - [JS Hint ](https://jshint.com/) 
   
 - ### Lighthouse  Validation
    - Lighthouse report generator was used to validate the Performance, SEO, Accesibility, Best Practices for mobile and desktop.
-     <img src="readme-docs/lighthouse.png">
+     ![Lighhouse verification](readme-docs/wireframes/Lighthouse.png)
       
 
 -  ### Test cases (user story based with screenshots)
       
       -   #### First Time Visitor Goals
 
-    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the restaurant.
+    1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the application.
 
-        1. Upon entering the site, users are automatically greeted with a clean and easily readable navigation bar to go to the page of their choice. Underneath there is a Hero Image with Text that states the restaurant mission goal.
-        2. The main points are made immediately with the hero image that this is a food restaurant website and the area we currently service
-        3. The user has two options, click the navigation bar on the right or scroll down to call to action, both of which will lead to the same place, to learn more about the organisation.
+        1. Upon entering the site, users are automatically greeted with a clean and easily readable homepage call to action button to direct budget page to go to the page of their application. Underneath there is a Hero Image with Text that states the mission goal of the app     .
+        2. The main points are made immediately with the hero image that this is a an expenditure and expense tracker application website.
+        3. The user has one options on arrival, click the call to action button in the bottom, then on the secone page, the use will be able to navigate to the homepage and back.
+        4. User can click on the nav bar to see a menu of Analytics and Dashboard
 
     2. As a First Time Visitor, I want to be able to easily be able to navigate throughout the site to find content.
 
-        1. The site has been designed to be fluid and never to entrap the user. At the top of each page there is a clean navigation bar, each link describes what the page they will end up at clearly.
-        2. At the bottom of the first and last page there is a redirection call to action button to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
+        1. The site has been designed to be fluid and never to entrap the user. At the bottom of the first page there is a call to action button, to take the user to the main page where they start budgeting
+        2. At the top of the second page there is a navigation bar with two optiond (Analytics and Dashboard) there also the logo to your left it's linked directly to the homepage to ensure the user always has somewhere to go and doesn't feel trapped as they get to the bottom of the page.
         - Call to Action first and last page
         <img src="readme-docs/lastpagecta.png" width="250"> 
         <img src="readme-docs/firstpagecta.png" width="250">
-        3. On the Contact Us Page, after a form response is submitted, the page refreshes and the user is brought to the top of the page where the navigation bar is with message confirming the form has 
-           been successfully submitted.
-           <img src ="readme-docs/confirmmessage.png" width="250">
-
-    3. As a First Time Visitor, I also want to locate their social media links to see their following on social media to determine how trusted and known they are.
-        1. Once the new visitor has read the About Us and What We Do text, they will notice the Why We are Loved So Much section.
-        2. The user can also scroll to the bottom of any page on the site to locate social media links in the footer.
-        3. At the bottom of the Contact Us page, the user is told underneath the form, that alternatively they can contact the restaurant on social media which highlights the links to them.
 
 -   #### Returning Visitor Goals
 
@@ -154,17 +134,14 @@
 
     3. As a Returning Visitor, I want to find the Facebook Group link so that I can join and interact with others in the community.
         1. The Facebook Page can be found at the footer of every page and will open a new tab for the user and more information can be found on the Facebook page.
--   #### Frequent User Goals
-    1. As a Frequent User, I want to check to see if there are any newly added menu or locations.
-        1. The user would already be comfortable with the website layout and can easily click the menu from the nav bar or call to action from contact page.
-
         ### Fixed Bugs
 
         - The responsiveness of the page on iPad screen was a little bit bad and needed alignment
+        - I had issues with my handlers in while working on Javascript and I was able to fix it by retracing my code
         
 -  ## Supported Screens and Browsers
 
-        
+       
     ### Further Testing
 
    -   The Website was tested on Google Chrome, Internet Explorer, Mozilla Firefox, Microsoft Edge and Safari browsers.
